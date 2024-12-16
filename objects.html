@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<script src="app.js">
+
+
+
+// Create an object
+const person = {
+  name: "Alice",          // A string property
+  age: 25,                // A number property
+  isStudent: true,        // A boolean property
+  hobbies: ["reading", "coding", "traveling"], // An array property
+  greet: function() {     // A method (function inside an object)
+    return "Hello, " + this.name + "!";
+  }
+};
+
+// Accessing properties
+console.log(person.name);        
+// Output: Alice
+
+console.log(person.age);         
+// Output: 25
+
+console.log(person.isStudent);   
+// Output: true
+
+console.log(person.hobbies[1]);  
+// Output: coding
+
+// Calling a method
+console.log(person.greet());     
+// Output: Hello, Alice!
+
+// Adding a new property
+person.country = "Canada";
+console.log(person.country);     
+// Output: Canada
+
+// Updating a property
+person.age = 26;
+console.log(person.age);         
+// Output: 26
+
+// Deleting a property
+delete person.isStudent;
+console.log(person.isStudent);   
+// Output: undefined
+</script>
+</body>
+</html>
